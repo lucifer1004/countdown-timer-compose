@@ -148,8 +148,6 @@ class TimerViewModel : ViewModel() {
 class MainActivity : AppCompatActivity() {
     val timerViewModel by viewModels<TimerViewModel>()
 
-    @ExperimentalAnimationApi
-    @InternalCoroutinesApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -160,8 +158,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-@ExperimentalAnimationApi
-@InternalCoroutinesApi
 @Composable
 fun MyApp(viewModel: TimerViewModel = viewModel()) {
     val isRunning: Boolean by viewModel.isRunning.observeAsState(false)
@@ -237,7 +233,6 @@ fun MyApp(viewModel: TimerViewModel = viewModel()) {
     }
 }
 
-@InternalCoroutinesApi
 @Composable
 fun Wheel(
     label: String,
@@ -279,8 +274,6 @@ fun Wheel(
     }
 }
 
-@ExperimentalAnimationApi
-@InternalCoroutinesApi
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun LightPreview() {
@@ -289,8 +282,6 @@ fun LightPreview() {
     }
 }
 
-@ExperimentalAnimationApi
-@InternalCoroutinesApi
 @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun DarkPreview() {

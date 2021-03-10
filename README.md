@@ -1,8 +1,8 @@
-# Put title of your app here
+# Timer
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/lucifer1004/android-dev-challenge-compose/workflows/Check/badge.svg)
+![Workflow result](https://github.com/lucifer1004/countdown-timer-compose/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
